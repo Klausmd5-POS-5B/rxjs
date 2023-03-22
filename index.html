@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RxJs</title>
+  <script src="index.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="/node_modules/rxjs/dist/bundles/rxjs.umd.min.js"></script>
+  <script src="/node_modules/@rgrueneis/rxjs-visualizer/rxjs.visualizer.umd.min.js"></script>
+</head>
+  <body>
+  <center>
+      <h2>BMI: <val id="bmiOut"></val></h2>
+      Weight: <val id="b_out_Weight"></val>kg <br>
+
+      <input type="range" id="w_in" min="40" max="200" value="1"><br>
+      Height: <val id="b_out_Height"></val>cm <br>
+
+      <input type="range" id="h_in" min="140" max="250" value="1"><br>
+    <hr>
+
+      <h2>Cascading</h2>
+      <val id="cID_out"></val>
+
+    <br>
+      <input type="range" id="cID_in" min="0" max="499" value="0"><br>
+      <val id="cUSer"></val>
+      <br>
+      <br>
+    <hr>
+      <h2>Parallel</h2>
+      <input type="range" id="in_parallel" max="10">
+      <h4>Album</h4>
+      <ul id="lst_albums"></ul>
+
+      <h4>Todos</h4>
+      <ul id="lst_todos"></ul>
+    <hr>
+      <h2>Autcomplete</h2>
+      <br>
+      <br>
+      <br>
+      <button id="in_start">Start</button>
+
+      Persons Query
+      <input type="text" id="in_query">
+      <ul id="lst_persons"></ul>
+  </center>
+
+  </body>
+</html>
